@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
-import {mobile} from "../responsive"
+import {mobile} from "../responsive";
+import { Link } from "react-router-dom";
+
 
 const Container=styled.div`
  height:60px;
@@ -82,13 +84,17 @@ const Navbar = () => {
           <Logo>UMA.</Logo>
         </Center>
         <Right>
+        <Link to="/register" >
           <MenuItem>REGISTER</MenuItem>
+          </Link>
+          <Link to="/login" >
           <MenuItem>SIGN IN</MenuItem>
-         
-          <MenuItem>
+          </Link>
+          <Link to="/cart" >     
+               <MenuItem>
            <FontAwesomeIcon icon={faCartShopping} /> 
           </MenuItem>
-         
+          </Link>
         </Right>
         </Wrapper>  
     </Container>

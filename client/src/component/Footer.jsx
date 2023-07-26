@@ -8,6 +8,7 @@ import {
     } from "@fortawesome/free-solid-svg-icons";
     import { faFacebook, faInstagram, faTwitter, faPinterest } from '@fortawesome/free-brands-svg-icons';
     import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 
   
   const Container = styled.div`
@@ -111,7 +112,9 @@ import {
         <Center>
           <Title>Useful Links</Title>
           <List>
+            <Link to="/">
             <ListItem>Home</ListItem>
+            </Link>
             <ListItem>Cart</ListItem>
             <ListItem>Man Fashion</ListItem>
             <ListItem>Woman Fashion</ListItem>

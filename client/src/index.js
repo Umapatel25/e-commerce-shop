@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import { Provider } from "react-redux";
 import { store, persistor } from "./redux/store";
 import { PersistGate } from 'redux-persist/integration/react';
-import { createRoot } from 'react-dom/client';
+
 
 const root = document.getElementById('root');
 const app = (
@@ -17,5 +18,4 @@ const app = (
   </React.StrictMode>
 );
 
-
-ReactDOM.createRoot(root).render(app);
+createRoot(root).render(app);

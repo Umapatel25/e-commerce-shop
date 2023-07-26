@@ -6,7 +6,7 @@ import Footer from "../component/Footer";
 import { mobile } from "../responsive";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-import {BrowserRouter as Router} from "react-router-dom";
+//import {BrowserRouter as Router} from "react-router-dom";
 
 
 
@@ -56,7 +56,7 @@ const Option = styled.option``;
   };
 
   return (
-    <Router>
+    
     <Container>
       <Navbar />
       <Announcement />
@@ -94,7 +94,7 @@ const Option = styled.option``;
       <Products cat={cat} filters={filters} sort={sort}/>
       <Footer />
     </Container>
-    </Router>
+    
   );
 };
 
